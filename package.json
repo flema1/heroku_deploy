@@ -13,7 +13,7 @@
   },
   "author": "",
   "license": "ISC",
-   "engines": {
+  "engines": {
     "node": "8.1.2"
   },
   "bugs": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/flema1/flema123.github.io#readme",
   "dependencies": {
+    "express": "^4.16.0",
     "express-validator": "^4.2.1",
     "node-php": "0.0.1",
     "nodemailer-smtp-transport": "^2.7.4",
