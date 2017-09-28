@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.use('/', express.static(path.join(__dirname, 'public')))
+//app.use('/', express.static(path.join(__dirname, 'public')))
 //app.use("/", php.cgi('/path/to/execphp.js')); 
 
 //var execPHP = require('./execphp.js')();
