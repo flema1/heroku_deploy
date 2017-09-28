@@ -22,6 +22,14 @@
 	         display: flex;
 	         position: fixed;
          }
+
+        .container-portfolio{
+	         width: 100%;
+	         height:100%;
+	         display: flex;
+	         /*position: fixed;*/
+         }
+
         .description{
 	        width: 50%;
 	        height:50%;
@@ -115,6 +123,26 @@
             border-radius: 10px;
             background: black;
         }
+        .link-span{
+            margin-right: 5px;
+            font-size: 50px;
+            margin-bottom: -10px;  
+        }
+        .stack-span{
+            font-size: 25px;
+            margin-right: 5px;
+        }
+        .stack-description{
+            font-size: 25px;
+        }
+        .app-description{
+             font-size: 25px;
+             padding-top: 16px;
+        }
+        /*iframe{
+            margin-bottom: -5px;
+        }*/
+
 /* above code for modal*/
 
      
