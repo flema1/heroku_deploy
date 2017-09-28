@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+      <style>
+        
+          
+      </style>
+   </head>
+   <body>
+      <div class= "container">
+      <div class="background">
+         <span>"</span>script type='text/javascript
+         <br>
+         <span>"</span>HTML
+         <br>
+         CSS
+         JQUERY
+         REACT
+         <br>
+         THREE.JS
+         EXPRESS
+         <br>
+         <br>
+         >>>NODE.JS
+      </div>
+      <div class="content">
+         <div class="mediaContainer">
+            <div class="media">
+               <img src="images/facebook.png">
+            </div>
+            <div class="media">
+               <img src="images/twitter.png">
+            </div>
+            <div class="media">
+               <img src="images/instagram.png">
+            </div>
+             <div class="media">
+               <img src="images/linkedin.png">
+            </div>
+            <div class="media">
+               <img src="images/git.png">
+            </div>
+         </div>
+         <img src="images/fish.png ">
+         
+      </div>
+      
+         <div class="NavBar">
+        <div class="tabs">
+             <a href="index.html">Home</a>
+        </div>
+         <div class="tabs">
+             <a href="about.html">About Me</a>
+        </div>
+         <div class="tabs">
+              <a href="portfolio.html">Portfolio</a>
+        </div>
+         <div class="tabs"><a href="#openModal">Resume</a>
+             </div>
+         <div class="tabs"><a href="contact.html">Contact</a>  </div>
+         <div class="tabs">
+            <p class="sounds" onclick="muteAudio();">Mute/UnMute</p>
+            <audio  autoplay>
+               <source src="watersounds.mp4" type="audio/mpeg">
+               Your browser does not support the audio element.
+            </audio>
+         </div>
+
+
+         <!-- below code for pdf/modal-->
+         <div id="openModal" class="modalDialog">
+  <div>
+
+ <div class="resume">
+         <embed src="images/franklin2.pdf" width="100%" height="600" type='application/pdf'>
+         </div>
+            <a href="#close" title="Close" class="close">
+              <input type="Button"  value="Exit">
+            </a>
+  </div>
+</div>      
+         <!-- above code for pdf/modal-->
+      </div>
+
+     <script type="text/javascript">
+         var   sound = document.getElementsByTagName('audio'),
+               music = sound[0],
+           muteAudio = function(){
+      	                 if (music.muted){
+      	                    music.muted = false;
+      	                 } 
+      	                 else {
+      	        	           music.muted = true;	
+      	                 }
+                        };
+   </script>
+   </body>
+</html>

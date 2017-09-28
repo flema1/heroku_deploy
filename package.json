@@ -1,0 +1,29 @@
+{
+  "name": "flema123.github.io",
+  "version": "1.0.0",
+  "description": "flema12.github.io",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flema1/flema123.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+   "engines": {
+    "node": "8.1.2"
+  },
+  "bugs": {
+    "url": "https://github.com/flema1/flema123.github.io/issues"
+  },
+  "homepage": "https://github.com/flema1/flema123.github.io#readme",
+  "dependencies": {
+    "express-validator": "^4.2.1",
+    "node-php": "0.0.1",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "path": "^0.12.7"
+  }
+}

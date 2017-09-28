@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <style>
+       
+        .button {
+            padding: 5px 5px 5px 5px;
+            color:#000;
+            text-decoration:none;
+            background:  #ff4d00; 
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .clearfix{           /* using clearfix*/
+            color: black; 
+            margin-left:-60px; 
+            text-align: left; 
+            margin-bottom: 10px;
+            height: 100vh; 	
+        }
+
+        .clearfix span{
+            color:  #ff4d00; 
+            float: left;       /* using float*/
+        } 
+        .clearfix a{
+            text-decoration: none;
+            color: #ff4d00;
+        }
+        iframe{
+            width: 500px; 
+            margin-bottom: 40px;
+            border:#ff4d00;
+        }
+        table{
+            width: 100%;
+        }
+        table .label{
+            color:white;
+            background: #ff4d00;
+            padding: 5px;
+            text-align: center;
+            width: 100%;
+            font-size: 40px; 
+        }
+        table input{
+            width: 600px;
+            height: 20px; 
+            background: white; 
+            margin-top:-20px;  
+        }
+        table  textarea {
+            width: 600px;
+            height: 200px; 
+            background: white; 
+            font-size: 15px;
+            margin-bottom: -20px;  
+        }
+
+      </style>
+   </head>
+   <body>
+      <div class= "container">
+      <div class="background">
+         
+         <img src="images/rocks.png" width= "100%">
+      </div>
+      <div class="content">
+         <div class="mediaContainer">
+            <div class="media">
+               <img src="images/facebook.png">
+            </div>
+            <div class="media">
+               <img src="images/twitter.png">
+            </div>
+            <div class="media">
+               <img src="images/instagram.png">
+            </div>
+            <div class="media">
+               <img src="images/linkedin.png">
+            </div>
+            <div class="media">
+               <img src="images/git.png">
+            </div>
+         </div>
+         <div class="description">
+       
+         <div class="clearfix">
+                 <a href="https://en-vision.herokuapp.com/">enVision App</a>
+                 <iframe src="https://en-vision.herokuapp.com/"></iframe>
+                 <a href="https://flema1.github.io/newEraMA/">New Era MA Site</a>
+                 <iframe src="https://flema1.github.io/newEraMA/"></iframe>
+                 <a href="https://obscure-escarpment-46521.herokuapp.com/">News Press</a>
+                 <iframe src="https://obscure-escarpment-46521.herokuapp.com/"></iframe>
+                 <a href="https://en-vision.herokuapp.com/">enVision App</a>
+                 <iframe src="https://en-vision.herokuapp.com/"></iframe>
+                 <a href="https://flema1.github.io/newEraMA/">New Era MA Site</a>
+                 <iframe src="https://flema1.github.io/newEraMA/"></iframe>
+                 <a href="https://obscure-escarpment-46521.herokuapp.com/">News Press</a>
+                 <iframe src="https://obscure-escarpment-46521.herokuapp.com/"></iframe>
+             </div>
+
+         </div>
+      </div>
+         <div class="NavBar">
+        <div class="tabs">
+             <a href="index.html">Home</a>
+        </div>
+         <div class="tabs">
+             <a href="about.html">About Me</a>
+        </div>
+         <div class="tabs">Portfolio </div>
+         <div class="tabs"><a href="#openModal">Resume</a>
+             </div>
+         <div class="tabs"><a href="contact.html">Contact</a>  </div>
+         <div class="tabs">
+            <p class="sounds" onclick="muteAudio();">Mute/UnMute</p>
+            <audio  autoplay>
+               <source src="watersounds.mp4" type="audio/mpeg">
+               Your browser does nott support the audio element.
+            </audio>
+         </div>
+
+
+  <!-- below code for pdf/modal-->
+         <div id="openModal" class="modalDialog">
+            <div>
+
+                    <div class="resume">
+                            <embed src="images/franklin2.pdf" width="100%" height="600" type='application/pdf'>
+                    </div>
+                    <a href="#close" title="Close" class="close">
+                            <input type="Button"  value="Exit">
+                    </a>            
+            </div>
+        </div>      
+                    <!-- above code for pdf/modal-->
+        </div>
+        <script type="text/javascript">
+
+         var   sound = document.getElementsByTagName('audio'),
+               music = sound[0],
+           muteAudio = function(){
+      	                 if (music.muted){
+      	                    music.muted = false;
+      	                 } 
+      	                 else {
+      	        	           music.muted = true;	
+      	                 }
+                        };
+
+        var submitEmail=function() {  
+            var display = document.getElementById("textArea").value;
+                document.getElementById("textArea").value = " ";
+            var input= document.getElementsByTagName('input');
+                input[0].value=" ";
+                input[1].value=" ";
+                if (display!==" "){
+                    alert('Thank-you! We\'ll get back shortly.');
+                    }
+                else{
+                   
+                    alert('Please enter a comment.');
+                    
+                }
+                
+                // document.getElementById("textArea").innerHTML = " "; 
+                //document.getElementById("temp").innerHTML = "hello display";
+        }
+   </script>
+   </body>
+</html>
