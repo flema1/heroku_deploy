@@ -115,6 +115,9 @@ app.post('/email/send', function(request, response){
 	});
 });
 
-app.listen(3000, function () {
-	console.log('Node server listening on port 3000!');
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, function() {
+  console.log(`listening on port ${PORT} 00`);
 });
