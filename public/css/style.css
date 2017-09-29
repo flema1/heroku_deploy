@@ -46,9 +46,10 @@
 	         background: rgba(255,255,255,.8);
 	         padding-top: 9%;
 	         width: 30%;
-	         display: flex;
+	         /*display: flex;*/
 	         align-items: center;
 	         flex-direction: column; 
+             position: fiex; 
          }
 
         .tabs{
@@ -63,7 +64,8 @@
          .mediaContainer{
 	         height:50px;
 	         width: 50px;
-	         position: absolute;
+	         position: fixed;
+             
          }
          .media{
 	         height:50px;
